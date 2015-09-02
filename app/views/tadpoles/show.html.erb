@@ -15,6 +15,10 @@
 <div class="card">
   <img src="http://<%= @tadpole.color %>-tadpole.jpg.to/" alt="Tadpole Picture" width="300">
 </div>
+<%= form_for @tadpole, url: "/tadpoles/#{@tadpole.id}/metamorphosize", method: "post" do |f| %>
+  <%= f.submit "Become a frog" %>
+<% end %>
+<!-- 
 <button>
   <a href="/tadpoles/<%= @tadpole.id %>/metamorphosize", method: "post">Become a frog</a>
-</button> 
+</button>  -->
